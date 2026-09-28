@@ -10,7 +10,7 @@ plugins {
 
 android {
     namespace = "com.example"
-    compileSdk { version = release(36) { minorApiLevel = 1 } }
+    compileSdk = 36  // Changed from: compileSdk { version = release(36) { minorApiLevel = 1 } }
 
     defaultConfig {
         applicationId = "com.aistudio.shohanai.vzqtr"
@@ -46,12 +46,12 @@ android {
         compose = true
         buildConfig = true
     }
-}
-  testOptions { unitTests { isIncludeAndroidResources = true } }
-  dependenciesInfo {
-    includeInApk = false
-    includeInBundle = true
-  }
+
+    testOptions { unitTests { isIncludeAndroidResources = true } }
+    dependenciesInfo {
+      includeInApk = false
+      includeInBundle = true
+    }
 }
 
 // Configure the Secrets Gradle Plugin to use .env and .env.example files
