@@ -1,0 +1,6 @@
+{
+  "name": "Shohan AI",
+  "description": "Voice-activated AI assistant responding to 'Hi Shohan', equipped with gallery photo search, audio transcription, rapid messaging, direct calling, social media posting, and intelligent tasks.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
